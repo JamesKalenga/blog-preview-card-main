@@ -1,0 +1,171 @@
+/* This is used to reset the normal styles */
+*,*::before,
+*::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+
+body{
+    background-color: #f4d04e;
+    position: relative;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    position: relative;
+    width:384px;
+    height: 522px;
+    filter: drop-shadow(8px 8px 0px #000000);
+    border-radius: 15px;
+    position: absolute;
+    left: calc(50% - 384px/2);
+    top: calc(50% - 522px/2 - 0.5px);
+    overflow: hidden;
+}
+
+
+/* blogimage */
+.container .img{
+    position: absolute;
+    width: 336px;
+    height: 200px;
+    left: 24px;
+    top: 24px;
+
+}
+
+.container .img svg{
+    border-radius: 15px 15px 0px 0px;
+}
+
+.body-section{
+    position: absolute;
+    width: 336px;
+    height:194px;
+    left: 24px;
+    top: 248px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .body-section .btn{
+    width:82px;
+    height:29px;
+    color:black;
+    background-color: #f4d04e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: 800;
+    font-family: "Figtree", sans-serif;
+    text-transform: capitalize;
+
+}
+
+.container .body-section .first{
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container .body-section h1{
+    font-family: "Figtree", sans-serif;  
+    font-size: 25px;
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.container .body-section h1:hover{
+    color: #f4d04e;
+}
+.container .body-section .last{
+    color: gray;
+    font-family: "Figtree", sans-serif;  
+    font-size: 16px;
+}
+
+.container .last-section{
+    position: absolute;
+    left: 24px;
+    top: 466px;
+    width: 129px;
+    height: 32px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.container .last-section img{
+    width:32px;
+    height:32px;
+}
+.container .last-section{
+    font-family: "Figtree", sans-serif; 
+    font-weight: 800;
+}
+
+@media screen and (max-width: 375px){
+ .container{
+    width: 327px;
+    height:501px;
+    left: calc(50% - 327px/2);
+    top: calc(50% - 501px/2 - 0.5px);
+ }
+
+ .container .img{
+    overflow: hidden;
+    width:279px;
+    height:200px;
+    border-radius: 15px 15px 0px 0px;
+  
+ }
+
+ .body-section{
+    width:270px;
+    height: 173px;
+ }
+ .container .body-section .btn{
+    width:73px;
+    height:26px;
+ }
+ .container .body-section .first{
+    font-size: 15px;
+ }
+ .container .body-section h1{
+    font-size:20px ;
+ }
+ .container .body-section .last{
+    font-size: 13px;
+ }
+ .container .last-section{
+    width:117px;
+    height:32px;
+    left: 24px;
+    top: 445px;
+ }
+ .container .last-section p{
+    font-size: 14px;
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
